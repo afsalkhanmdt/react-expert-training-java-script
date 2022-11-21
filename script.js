@@ -1,4 +1,5 @@
 const name = "Ionaught";
+
 let age = 65;
 const isOkay = true;
 let nothing;
@@ -114,3 +115,50 @@ let newArr = [];
 // const res = arr.map((n) => n * n);
 
 // console.log(res);
+
+const obj = {
+  name: "Ionaught",
+  place: "Tvm",
+  age: 1,
+  isOkay: true,
+  tech: ["HTML", "CSS", "JS", "React"],
+  address: {
+    pin: 695010,
+  },
+  seyHello() {
+    console.log("Hello");
+  },
+};
+
+//!JSON
+
+//! JavaScript Object Notation
+
+const newObj = {
+  name: "Ionaught",
+  place: "Tvm",
+  age: 1,
+};
+
+// let a = 5;
+// a = 6;
+
+/*
+{
+  "name": "Ionaught",
+  "place": "Tvm",
+  "age": 1,
+}
+
+*/
+
+obj.name = "Ionaught Technologies";
+
+obj.greet = (name) => {
+  console.log("Hello " + name);
+};
+
+// obj.greet("Ashik");
+// console.log(obj.address);
+
+console.log(JSON.stringify(newObj));
